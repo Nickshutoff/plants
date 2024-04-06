@@ -1,0 +1,9 @@
+@import "./helpers/variables.css";
+@import "./helpers/common.css";
+@import "./components/header.css";
+@import "./components/welcome.css";
+@import "./components/about.css";
+@import "./components/service.css";
+@import "./components/prices.css";
+@import "./components/contacts.css";
+@import "./components/footer.css"

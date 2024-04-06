@@ -1,0 +1,215 @@
+.service {
+    padding: 40px 109px 121px 109px;
+    margin-top: 100px;
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1240px) {
+    .service {
+        display: flex;
+        width: 768px;
+        padding: 60px 50px 70px 50px;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+@media (max-width: 380px) {
+    .service {
+        width: 380px;
+        padding: 30px 25px;
+    }
+}
+
+.service-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 142px;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 1240px) {
+    .service-top {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .service-top {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+.service-title {
+    max-width: 306px;
+    width: 100%;
+    color: var(--color-primary);
+    font-family: var(--font-title);
+    font-size: 40px;
+    line-height: 1.138;
+}
+
+@media (max-width: 1240px) {
+    .service-title {
+        font-size: 35px;
+        line-height: 46px;
+    }
+}
+
+@media (max-width: 380px) {
+    .service-title {
+        font-size: 25px;
+        line-height: 33px;
+        width: 200px;
+    }
+}
+
+.service-buttons-container {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1240px){
+    .service-buttons-container {
+    margin-top: 40px;
+    }
+}
+
+@media (max-width: 380px){
+    .service-buttons-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 9px;
+    }
+}
+
+.service-button {
+    width: 161px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+@media (max-width: 380px){
+    .service-button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    }
+}
+
+.service-button:hover {
+    background-color: var(--color-secondary);
+    transform: all scale(1.1) 0.3 ease;
+    color: var(--color-light);
+}
+
+.service-button.active {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+.service-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 117px;
+    grid-row-gap: 55px;
+}
+
+@media (max-width: 1240px) {
+    .service-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 107px;
+        grid-row-gap: 38px;
+    }
+}
+
+@media (max-width: 380px) {
+    .service-card-container {
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 107px;
+        grid-row-gap: 38px;
+    }
+}
+
+.service-item {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.service-item.blur {
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
+@media (max-width: 1240px) {
+    .service-item {
+        max-width: 330px; 
+        height: 450px;
+    }
+
+    .service-item img {
+        max-width: 329px;   
+        height: 350px;  
+    }
+}
+
+@media (max-width: 380px) {
+    .service-item {
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .service-item img {
+        max-width: 279px;   
+    }
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-title {
+    margin-top: 5px;
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.item-info {
+    color: var(--color-base-100);
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 36px;
+    margin-top: 10px;
+}
+
+@media (max-width: 380px) {
+    .item-info {
+        max-width: 201px;
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+
+.header {
+    font-family: var(--font-title);
+}
+
+.header, .welcome,
+.about, .service,
+.prices, .contact,
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: var(--font-regular);
+}
+
+.greentext {
+    color: var(--color-primary);
+}
+
+.orangetext {
+    color: var(--color-secondary);
+}

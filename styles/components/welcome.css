@@ -1,0 +1,158 @@
+.welcome {
+    background-color: var(--color-light);
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 109px;
+    display: flex;
+    
+}
+
+@media (max-width: 1240px) {
+    .welcome {
+        width: 768px;
+        padding: 40px 50px 70px ;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome {
+        width: 380px;
+        margin: auto;
+        padding: 32px 25px;
+    }
+}
+
+.welcome-pic img {
+    width: 448.795px;
+    height: 407.358px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1240px){
+    .welcome-pic img {
+        width: 280px;
+        height: 254.148px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-pic img {
+        width: 255px;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome-pic {
+        display: none;
+    }
+}
+
+.welcome-container {
+    display: flex;
+    width: 549px;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 43px;
+}
+
+@media (max-width: 1240px) {
+    .welcome-container {
+        width: 341px;
+        /* height: 236px; */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome-container {
+        gap: 20px;
+    }
+}
+
+.welcome-text-primary {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    color: var(--color-base-100);
+}
+
+@media (max-width: 1240px) {
+    .welcome-text-primary {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-text-primary {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome-text-primary {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+.welcome-text-secondary {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    color: var(--color-base-200);
+}
+
+@media (max-width: 1240px) {
+    .welcome-text-secondary {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-text-secondary {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome-text-secondary {
+        font-size: 16px;
+    }
+}
+
+.welcome-button {
+    color: var(--color-base-0);
+    font-size: 16px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+    width: 158px;
+    height: 44px;
+    cursor: pointer;
+}
+
+@media (max-width: 380px) {
+    .welcome-button {
+        font-size: 10px;
+        line-height: 20px;
+        width: 100px;
+        height: 34px;
+    }
+}
+
+.welcome-button:hover,
+.welcome-button:active {
+    background-color: var(--color-secondary);
+    transform: scale(1.1) 0.3s ease;
+    color: var(--color-light);
+}

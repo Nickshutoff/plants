@@ -1,0 +1,20 @@
+:root {
+    --font-regular: "Inter", sans-serif;
+    --font-title: "Inika", sans-serif;
+
+    --color-primary: #399a18;
+    --color-secondary: #e06733;
+    --color-base-0: #010201;
+    --color-base-100: #717171;
+    --color-base-200: #636060;
+    --color-light: #edf2ec;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-border: #E3E1D5;
+
+    --color-btn-unactive: #D6E7D2;
+    --color-btn-active: #C1E698;
+
+    --color-border-accordion-normal: #D9D9D9;
+    --color-border-accordion-hover: #717171;
+}

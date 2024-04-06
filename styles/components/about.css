@@ -1,0 +1,125 @@
+.about {
+    display: flex;
+    width: 1440px;
+    padding: 93px 109px 94px 109px;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 1240px){
+    .about {
+        margin: 0 auto;
+        display: flex;
+        width: 768px;
+        padding: 40px 50px 95px 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+@media (max-width: 380px) {
+    .about {
+        width: 380px;
+        margin: auto;
+        padding: 32px 25px;
+    }
+}
+.about-container {
+    display: flex;
+    width: 1222px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+@media (max-width: 1240px) {
+    .about-container {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.about-text {
+    width: 605px;
+    margin-top: 68px;
+}
+
+@media (max-width: 1240px) {
+    .about-text {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-text {
+        width: auto;
+        margin-top: 0px;
+    }
+}
+
+.about-text-primary {
+    color: var(--color-primary);
+    font-size: 40px;
+    line-height: 52.12px;
+    width: auto;
+}
+
+@media (max-width: 1240px){
+    .about-text-primary {
+        width: auto;
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-text-primary {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.about-text-secondary {
+    color: var(--color-base-200);
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1240px){
+    .about-text-secondary {
+        width: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-text-secondary {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.about-pic img {
+    width: 464px;
+    height: 479px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1240px){
+    .about-pic img {
+        width: 250px;
+        height: 258px;
+    }
+}
+
+@media (max-width: 380px){
+    .about-pic img {
+        width: 150px;
+        height: 147px;
+    }
+}
