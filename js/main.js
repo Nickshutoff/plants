@@ -1,4 +1,4 @@
-//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .header---
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .header---
 //Плавная прокрутка
 const navLinks = document.querySelectorAll('.nav-link')
 
@@ -35,12 +35,10 @@ mobileMenuLinks.forEach(el => {
     })
 })
 
-//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .service---
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .service---
 //Привязка кнопок и карточек
-let serviceButtons = document.querySelectorAll('.service-button')
-let serviceCards = document.querySelectorAll('.service-item')
-
-//Пустой массив для активных кнопок
+const serviceButtons = document.querySelectorAll('.service-button')
+const serviceCards = document.querySelectorAll('.service-item')
 let activeButtons = []
 
 //Фнкция-конструктор для кнопок
@@ -86,18 +84,25 @@ serviceButtons.forEach(function(btn) {
   new BlurButton(btn)
 })
 
-//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .prices---
-const accordionPrices = document.querySelectorAll('.prices-option-header')
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .prices---
+const accordionPrices = document.querySelectorAll('.prices-option-header');
 
 accordionPrices.forEach(el => {
-  const innerContent = el.parentElement.querySelector('.prices-option-inner-content')
+  const innerContent = el.parentElement.querySelector('.prices-option-inner-content');
 
   el.addEventListener('click', () => {
-    el.parentElement.classList.toggle('active')
+    const isActive = el.parentElement.classList.contains('active')
+    accordionPrices.forEach(item => {
+      item.parentElement.classList.remove('active')
+    })
+
+    if (!isActive) {
+      el.parentElement.classList.add('active')
+    }
   })
 })
 
-//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .contacts
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Секция .contacts
 //eventListeners
 const accordionButton = document.querySelector('.contacts-accordion-button')
 const accordionList = document.querySelector('.contacts-accordion-list')
